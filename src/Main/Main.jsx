@@ -3,12 +3,14 @@ import Clock from "../Components/Clock/Clock";
 
 const Main = () => {
   return (
-    <div className="max-h">
-      <Clock />
-      <div className="relative w-[530px] h-[400px] shadow-[inset_5px_5px_7px_6px_#e2e8f0,10px_10px_8px_3px_#e2e8f0] flex rounded-md bg-white ">
-        <Calender />
+    <section className="relative flex flex-col justify-center items-center min-h-[100vh] bg-[#161623] w-full text-white overflow-hidden ">
+      <div className=" relative z-[1000] ">
+        <Clock />
+        <div className="container border-r-[rgba(255,255,255,0.2)] border-b-[rgba(255,255,255,0.2)] relative w-[530px] h-[400px] flex rounded-md bg-gray-500 bg-opacity-30 backdrop-blur-lg border-gray-400 border items-center justify-center ">
+          <Calender />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
