@@ -9,7 +9,10 @@ const CalenderJs = () => {
   return (
     <div>
       <h1>There is the Calender</h1>
-      <div> <Calendar onChange={onChange} value={date}/> </div>
+      <div>
+        {" "}
+        <Calendar onChange={onChange} className="calendar" value={date}  />{console.log(date)}
+      </div>
     </div>
   );
 };
