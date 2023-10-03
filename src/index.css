@@ -105,3 +105,21 @@ section::after {
 .react-calendar__month-view__days__day--neighboringMonth {
   color: rgba(202, 202, 202, 0.67);
 }
+
+
+.clock-digit {
+  display: flex;
+  font-size: 4rem;
+  margin: 0 15px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.flip {
+  position: relative;
+  
+  animation: flip 1s cubic-bezier(0.4, 2.1, 0.3, 1.2) forwards;
+  transform-style: preserve-3d;
+}
+
+
